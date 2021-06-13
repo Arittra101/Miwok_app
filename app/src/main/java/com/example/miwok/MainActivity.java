@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView family_view =  findViewById(R.id.family);
+
         family_view.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void number(View view)
     {
 //        Intent i = new Intent(this,NumberActivity.class);
-        Intent i =new Intent(this,NumberActivity.class);
+        Intent i =new Intent(this,NumberActivity.class); //explicit
         startActivity(i);
     }
 }
